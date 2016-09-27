@@ -5,19 +5,30 @@ PWD=`pwd`
 function install_link() {
 
     # check if file exists, remove interactively
-    if [ -f "$2" ];
+    if [ -e "$2" ] || [ -L "$2" ];
     then
-        rm -i "$2";
-    fi;
+        # check if existing file is link
+        if [ -L "$2" ];
+        then
+            EXISTING_LINK_TARGET=`readlink -f "$2"`;
+            # check if link points to target
+            if [ "$1" == "$EXISTING_LINK_TARGET" ];
+            then
+                echo "[info] Already configured: '$2' points to '$1'";
+                return;
+            else
+                echo "[error] Conflict: '$2' exists, it's link pointing to $EXISTING_LINK_TARGET";
+                rm -i "$2";
+            fi;
+        else
+            echo "[error] Conflict: '$2' exists";
+            rm -i "$2";
+        fi;
 
-    # check if link exists, remove interactively
-    if [ -L "$2" ];
-    then
-        # TODO: check target, conditionally remove / update
-        rm -i "$2";
     fi;
 
     # install link
+    echo "[info] Creating symbolic link '$2' pointing to '$1'"
     ln -sn -T "$1" "$2"
 }
 
