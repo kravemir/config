@@ -24,3 +24,4 @@ function install_link() {
 install_link "$PWD/bashrc" "$HOME/.bashrc"
 install_link "$PWD/vimrc" "$HOME/.vimrc"
 install_link "$PWD/vim" "$HOME/.vim"
+install_link "$PWD/Xresources" "$HOME/.Xresources"
