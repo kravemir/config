@@ -123,8 +123,8 @@ let g:solarized_termcolors=256
 colorscheme evening
 if has( 'gui_running' ) 
     set guioptions=i
-    set guifont=Inconsolata-g\ for\ Powerline\ 10
     set guifont=Inconsolata\ 10.5
+    set guifont=Inconsolata-g\ for\ Powerline\ 10
 else
     let g:Powerline_symbols = 'unicode'
 endif

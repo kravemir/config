@@ -8,7 +8,7 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 ! URxvt fonts
-URxvt*font: xft:Inconsolata:pixelsize=13
+URxvt*font: xft:Inconsolata-dz\ for\ Powerline:pixelsize=13
 
 ! URxvt appearance
 URxvt*scrollstyle:      plain
@@ -19,30 +19,30 @@ URxvt*thickness:        1
 URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0000/e000
 
- !  - color scheme
- urxvt.foreground:  #EBEBFF
- ! black + red
- !urxvt*color0:     #3f3f3f
- urxvt*color0:      #000000
- urxvt*color1:      #e01010
- ! green + yellow
- urxvt*color2:      #00AA00
- urxvt*color3:      #FFFF00
- ! blue + purple
- urxvt*color4:      #112037
- urxvt*color5:      #A020F0
- ! cyan + white
- urxvt*color6:      #5B5BC7
- urxvt*color7:      #fefefe
- ! bright-black + bright-red
- urxvt*color8:      #6a6a6a
- urxvt*color9:      #FF5555
- ! bright-green + bright-yellow
- urxvt*color10:     #90EE90
- urxvt*color11:     #ffff2f
- ! bright-blue + bright-purple
- urxvt*color12:     #5B5BC7
- urxvt*color13:     #e628ba
- ! bright-cyan + bright-white
- urxvt*color14:     #7D7DFB
- urxvt*color15:     #ffffff
+!  - color scheme
+urxvt.foreground:  #EBEBFF
+! black + red
+!urxvt*color0:     #3f3f3f
+urxvt*color0:      #000000
+urxvt*color1:      #e01010
+! green + yellow
+urxvt*color2:      #00AA00
+urxvt*color3:      #FFFF00
+! blue + purple
+urxvt*color4:      #112037
+urxvt*color5:      #A020F0
+! cyan + white
+urxvt*color6:      #5B5BC7
+urxvt*color7:      #fefefe
+! bright-black + bright-red
+urxvt*color8:      #6a6a6a
+urxvt*color9:      #FF5555
+! bright-green + bright-yellow
+urxvt*color10:     #90EE90
+urxvt*color11:     #ffff2f
+! bright-blue + bright-purple
+urxvt*color12:     #5B5BC7
+urxvt*color13:     #e628ba
+! bright-cyan + bright-white
+urxvt*color14:     #7D7DFB
+urxvt*color15:     #ffffff
