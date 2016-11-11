@@ -37,3 +37,6 @@ install_link "$PWD/tint2rc" "$HOME/.config/tint2/tint2rc"
 install_link "$PWD/vimrc" "$HOME/.vimrc"
 install_link "$PWD/vim" "$HOME/.vim"
 install_link "$PWD/Xresources" "$HOME/.Xresources"
+
+# install packages
+sudo apt install $(cat "$PWD/packages")
