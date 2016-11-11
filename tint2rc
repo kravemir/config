@@ -119,10 +119,10 @@ mouse_scroll_down = iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 0 4 2
+systray_padding = 0 0 6
 systray_background_id = 0
 systray_sort = ascending
-systray_icon_size = 20
+systray_icon_size = 24
 systray_icon_asb = 100 0 0
 systray_monitor = 1
 
@@ -136,8 +136,9 @@ launcher_icon_asb = 100 0 0
 launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 1
-launcher_item_app = /usr/share/applications/rxvt-unicode.desktop
 launcher_item_app = /usr/share/applications/google-chrome.desktop
+launcher_item_app = /usr/share/applications/rxvt-unicode.desktop
+launcher_item_app = /usr/share/applications/gvim.desktop
 launcher_item_app = /usr/share/applications/Thunar.desktop
 
 #-------------------------------------
