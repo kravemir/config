@@ -33,6 +33,7 @@ function install_link() {
 }
 
 install_link "$PWD/bashrc" "$HOME/.bashrc"
+install_link "$PWD/tint2rc" "$HOME/.config/tint2/tint2rc"
 install_link "$PWD/vimrc" "$HOME/.vimrc"
 install_link "$PWD/vim" "$HOME/.vim"
 install_link "$PWD/Xresources" "$HOME/.Xresources"
