@@ -6,7 +6,7 @@
 # Background 1: Panel
 rounded = 0
 border_width = 0
-background_color = #000000 70
+background_color = #000000 75
 border_color = #000000 90
 background_color_hover = #000000 60
 border_color_hover = #000000 30
@@ -64,7 +64,7 @@ wm_menu = 1
 panel_dock = 0
 panel_position = bottom center horizontal
 panel_layer = top
-panel_monitor = all
+panel_monitor = 1
 primary_monitor_first = 0
 autohide = 0
 autohide_show_timeout = 0
@@ -72,7 +72,7 @@ autohide_hide_timeout = 0.5
 autohide_height = 2
 strut_policy = follow_size
 panel_window_name = tint2
-disable_transparency = 1
+disable_transparency = 0
 mouse_effects = 1
 font_shadow = 0
 mouse_hover_icon_asb = 100 0 10
@@ -119,8 +119,8 @@ mouse_scroll_down = iconify
 
 #-------------------------------------
 # System tray (notification area)
-systray_padding = 0 0 6
-systray_background_id = 0
+systray_padding = 6 0 6
+systray_background_id = 2
 systray_sort = ascending
 systray_icon_size = 24
 systray_icon_asb = 100 0 0
@@ -151,7 +151,7 @@ time1_timezone =
 time2_timezone = 
 clock_font_color = #fcfcfc 100
 clock_padding = 8 0
-clock_background_id = 0
+clock_background_id = 2
 clock_tooltip = 
 clock_tooltip_timezone = 
 clock_lclick_command = 

@@ -33,6 +33,7 @@ function install_link() {
 }
 
 install_link "$PWD/bashrc" "$HOME/.bashrc"
+install_link "$PWD/fluxbox/keys" "$HOME/.fluxbox/keys"
 install_link "$PWD/fluxbox/overlay" "$HOME/.fluxbox/overlay"
 install_link "$PWD/fluxbox/startup" "$HOME/.fluxbox/startup"
 install_link "$PWD/ssh/config" "$HOME/.ssh/config"
