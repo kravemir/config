@@ -48,6 +48,7 @@ Mod1 space :WindowMenu
 # send the current window to previous/next workspace
 Mod4 Left :MacroCmd {ResizeTo 50%  100%} {MoveTo 00 00 LowerLeft}
 Mod4 Right :MacroCmd {ResizeTo 50%  100%} {MoveTo 00 00 LowerRight}
+Mod4 Up :Maximize
 
 # send the current window to previous/next workspace
 Mod4 Shift Left :SendToPrevHead

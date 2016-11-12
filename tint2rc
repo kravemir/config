@@ -7,7 +7,7 @@
 rounded = 0
 border_width = 0
 background_color = #000000 75
-border_color = #000000 90
+border_color = #ffffff 8
 background_color_hover = #000000 60
 border_color_hover = #000000 30
 background_color_pressed = #000000 60
@@ -55,10 +55,10 @@ border_color_pressed = #000000 100
 
 #-------------------------------------
 # Panel
-panel_items = LTSC
+panel_items = LTESC
 panel_size = 100% 30
 panel_margin = 0 0
-panel_padding = 2 0 2
+panel_padding = 0 0 3
 panel_background_id = 1
 wm_menu = 1
 panel_dock = 0
@@ -113,7 +113,7 @@ task_urgent_background_id = 4
 task_iconified_background_id = 2
 mouse_left = toggle_iconify
 mouse_middle = none
-mouse_right = close
+mouse_right = none
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
 
@@ -184,4 +184,15 @@ tooltip_hide_timeout = 0.1
 tooltip_padding = 4 4
 tooltip_background_id = 5
 tooltip_font_color = #cccccc 100
+
+#-------------------------------------
+# Executor
+execp = new
+execp_command = df -h / /home | awk '/\// { print $6 ": " $2 }' | tr '\n' ',' | sed 's/,$//g' | sed 's/,/,  /g'
+execp_interval = 60
+execp_padding = 6 0 0
+execp_background_id = 0
+execp_font = Inconsolata-dz 8
+execp_font_color = #c3c3c3 100
+execp_lclick_command = urxvt -e bash -c 'df -h; echo; read -n1 -s -p "Press any key to continue..."'
 
