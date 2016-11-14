@@ -3,5 +3,6 @@ scrot
 nitrogen
 thunar
 rxvt-unicode-256color
-nm-applet
+network-manager-gnome
 volumeicon-alsa
+fluxbox

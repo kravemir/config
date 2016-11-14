@@ -4,6 +4,8 @@ PWD=`pwd`
 
 function install_link() {
 
+    mkdir -p $(dirname $2)
+
     # check if file exists, remove interactively
     if [ -e "$2" ] || [ -L "$2" ];
     then
