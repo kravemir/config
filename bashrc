@@ -18,7 +18,7 @@ git_prompt_tag() {
     # GIT repo
     if `git rev-parse --is-inside-work-tree 2> /dev/null || echo false`;
     then
-        echo -n -e "\e[0m\e[33m git(`git rev-parse --abbrev-ref HEAD`)";
+        echo -n -e "\e[0m\e[33m git(`git rev-parse --abbrev-ref HEAD 2> /dev/null`)";
     fi;
 }
 
@@ -27,7 +27,7 @@ prompt_tag_time() {
 }
 
 my_command_prompt() {
-    RV=$1
+    RV="$1"
     RETURN_VAL_OK=$'\e[033;01;32m\xe2\x9c\x93'
     RETURN_VAL_BAD=$'\e[033;01;31m\xe2\x9c\x97\e[033;00;31m:'"$RV"
 
@@ -48,4 +48,4 @@ my_command_prompt() {
     prompt_tag_time
 }
 
-PS1="\$(my_command_prompt \$? \u \h \w) \n\[\033[00m\]\$\[\033[00m\] "
+PS1="\$(my_command_prompt \"\$?\" \"\u\" \"\h\" \"\w\") \n\[\033[00m\]\$\[\033[00m\] "
