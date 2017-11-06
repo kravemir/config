@@ -47,3 +47,6 @@ install_link "$PWD/Xresources" "$HOME/.Xresources"
 
 # install packages
 sudo apt install $(cat "$PWD/packages")
+
+# install amdgpu
+sudo cp sysconfig/10-amdgpu.conf /etc/X11/xorg.conf.d/
