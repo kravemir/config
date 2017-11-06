@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 PWD=`pwd`
 
@@ -44,6 +44,7 @@ install_link "$PWD/tint2/bin/network_status.sh" "$HOME/.config/tint2/bin/network
 install_link "$PWD/vimrc" "$HOME/.vimrc"
 install_link "$PWD/vim" "$HOME/.vim"
 install_link "$PWD/Xresources" "$HOME/.Xresources"
+install_link "$PWD/i3" "$HOME/.config/i3"
 
 # install packages
 sudo apt install $(cat "$PWD/packages")
