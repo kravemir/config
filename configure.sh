@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 PWD=`pwd`
 
@@ -34,6 +34,8 @@ function install_link() {
     ln -sn -T "$1" "$2"
 }
 
+git submodule update --init --recursive
+
 install_link "$PWD/bashrc" "$HOME/.bashrc"
 install_link "$PWD/fluxbox/keys" "$HOME/.fluxbox/keys"
 install_link "$PWD/fluxbox/overlay" "$HOME/.fluxbox/overlay"
@@ -44,6 +46,8 @@ install_link "$PWD/tint2/bin/network_status.sh" "$HOME/.config/tint2/bin/network
 install_link "$PWD/vimrc" "$HOME/.vimrc"
 install_link "$PWD/vim" "$HOME/.vim"
 install_link "$PWD/Xresources" "$HOME/.Xresources"
+
+./powerline-fonts/install.sh
 
 # install packages
 sudo apt install $(cat "$PWD/packages")
