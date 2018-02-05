@@ -46,6 +46,7 @@ install_link "$PWD/vimrc" "$HOME/.vimrc"
 install_link "$PWD/vim" "$HOME/.vim"
 install_link "$PWD/Xresources" "$HOME/.Xresources"
 install_link "$PWD/i3" "$HOME/.config/i3"
+install_link "$PWD/i3status" "$HOME/.config/i3status"
 install_link "$PWD/bin/i3exit.sh" "$HOME/.local/bin/i3exit.sh"
 install_link "$PWD/bin/i3exit.sh" "$HOME/.local/bin/i3exit"
 
