@@ -34,6 +34,8 @@ function install_link() {
     ln -sn -T "$1" "$2"
 }
 
+git submodule update --init --recursive
+
 install_link "$PWD/bashrc" "$HOME/.bashrc"
 install_link "$PWD/profile" "$HOME/.profile"
 install_link "$PWD/fluxbox/keys" "$HOME/.fluxbox/keys"
@@ -49,6 +51,8 @@ install_link "$PWD/i3" "$HOME/.config/i3"
 install_link "$PWD/i3status" "$HOME/.config/i3status"
 install_link "$PWD/bin/i3exit.sh" "$HOME/.local/bin/i3exit.sh"
 install_link "$PWD/bin/i3exit.sh" "$HOME/.local/bin/i3exit"
+
+./powerline-fonts/install.sh
 
 # install packages
 sudo apt install $(cat "$PWD/packages")
